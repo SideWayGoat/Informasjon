@@ -1,0 +1,23 @@
+<body>
+    <div class="container">
+        <div class="header">
+
+        </div>
+        <div *ngIf="templateData">
+            <div class="content-wrapper" [ngClass]="{'inverted': invertLayout()}">
+                <div class="top-wrapper">
+                    <textarea [(ngModel)]="templateData.fields[1].default"></textarea>
+                </div>
+                <div class="bot-wrapper">
+                    <div *ngFor="let item of templateData.fields[3].options">
+                        {{item[0]}}
+                    </div>
+                    <div *ngFor="let image of uploadedImage">
+                        <img [src]="image" >
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>    
+</body>

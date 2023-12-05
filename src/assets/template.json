@@ -1,0 +1,72 @@
+{
+    "name": "Infomasjon",
+    "contentBasePath": "",
+    "application": "template.html",
+    "options": {
+        "apiVersion": 2,
+        "templateVersion": 3,
+        "defaultDuration":12,
+        "targetWidth": 1920,
+        "targetHeight": 1080,
+        "scalePreview": true,
+        "scalePlayer": false,
+        "allowReuse": false
+    },
+    "fields": [
+        {
+            "type": "textarea",
+            "key":"title",
+            "caption": "overskrift",
+            "default":"",
+            "required":false
+        },
+        {
+            "type": "textarea",
+            "key":"body",
+            "caption": "Tekst",
+            "default":"i'm just gonna type some shit here and see if I get result",
+            "required":false
+        },
+        {
+            "type": "checkbox",
+            "key":"invertedLayout",
+            "caption": "Invert Layout",
+            "default":false
+        },
+        {
+            "key":"media1",
+            "caption": "Bilde 1",
+            "type": "content",
+            "required":false,
+            "options":[
+                {
+                    "path":"/Media"
+                },
+                {
+                    "path":"/"
+                }
+            ]
+        },
+        {
+            "key":"media2",
+            "caption": "Bilde 2",
+            "type": "content",
+            "required":false,
+            "options":[
+                {
+                    "path":"/Media"
+                },
+                {
+                    "path":"/"
+                }
+            ]
+        },
+        {
+            "type": "textarea",
+            "key":"note",
+            "caption": "Notat",
+            "default":"",
+            "required":false
+        }
+    ]
+}
